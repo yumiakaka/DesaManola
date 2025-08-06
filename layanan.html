@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Layanan Desa Manola</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: url('img/background1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      color: #333;
+    }
+    header, footer, nav {
+      background: transparent;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    nav a {
+      color: white;
+      padding: 10px 15px;
+      display: inline-block;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+    .content {
+      max-width: 800px;
+      margin: 30px auto;
+      background: rgba(255, 255, 255, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      color: #333;
+    }
+    .layanan-list {
+      list-style: none;
+      margin-bottom: 20px;
+      text-align: left;
+      padding-left: 0;
+    }
+    .layanan-item {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 15px 20px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      user-select: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+      color: #1e3a8a;
+    }
+    .layanan-item:hover {
+      background: rgba(81, 109, 252, 0.3);
+    }
+    .submenu {
+      margin-top: 10px;
+      padding-left: 20px;
+      display: none;
+    }
+    .submenu button {
+      background: #25D366;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin: 5px 10px 5px 0;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      font-weight: normal;
+    }
+    .submenu button:hover {
+      background: #1ebe5d;
+    }
+    .other-message-box {
+      margin-top: 30px;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 15px 20px;
+      border-radius: 10px;
+      text-align: left;
+      color: #1e3a8a;
+    }
+    .other-message-box textarea {
+      width: 100%;
+      height: 80px;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      resize: vertical;
+      font-size: 14px;
+    }
+    .other-message-box button {
+      margin-top: 10px;
+      width: 100%;
+      background: #25D366;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .other-message-box button:hover {
+      background: #1ebe5d;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Layanan Desa Manola</h1>
+  </header>
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="visi-misi.html">Visi & Misi</a>
+    <a href="profil.html">Profil</a>
+    <a href="peta.html">Peta</a>
+    <a href="berita.html">Berita</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="potensi.html">Potensi</a>
+    <a href="layanan.html">Layanan</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+
+  <div class="content">
+    <ul class="layanan-list">
+      <li class="layanan-item" onclick="toggleSubmenu('surat')">
+        Pelayanan Surat
+        <div class="submenu" id="submenu-surat">
+          <button onclick="ajukanLayanan(event, 'Surat Keterangan Domisili')">Surat Keterangan Domisili</button>
+          <button onclick="ajukanLayanan(event, 'Surat Keterangan Tidak Mampu')">Surat Keterangan Tidak Mampu</button>
+          <button onclick="ajukanLayanan(event, 'Surat Keterangan Usaha')">Surat Keterangan Usaha</button>
+          <button onclick="ajukanLayanan(event, 'Surat Pengantar KTP')">Surat Pengantar KTP</button>
+        </div>
+      </li>
+      <li class="layanan-item" onclick="toggleSubmenu('kk-kependudukan')">
+        Pelayanan Kependudukan & KK
+        <div class="submenu" id="submenu-kk-kependudukan">
+          <button onclick="ajukanLayanan(event, 'Pembuatan Kartu Keluarga (KK)')">Pembuatan Kartu Keluarga (KK)</button>
+          <button onclick="ajukanLayanan(event, 'Pembuatan KTP')">Pembuatan KTP</button>
+          <button onclick="ajukanLayanan(event, 'Pengurusan Akta Kelahiran')">Pengurusan Akta Kelahiran</button>
+        </div>
+      </li>
+      <li class="layanan-item" onclick="toggleSubmenu('izin')">
+        Pelayanan Perizinan
+        <div class="submenu" id="submenu-izin">
+          <button onclick="ajukanLayanan(event, 'Izin Mendirikan Bangunan (IMB)')">Izin Mendirikan Bangunan (IMB)</button>
+          <button onclick="ajukanLayanan(event, 'Izin Usaha Mikro Kecil Menengah (UMKM)')">Izin Usaha Mikro Kecil Menengah (UMKM)</button>
+        </div>
+      </li>
+      <li class="layanan-item" onclick="toggleSubmenu('lainnya')">
+        Layanan Lainnya
+        <div class="submenu" id="submenu-lainnya">
+          <button onclick="ajukanLayanan(event, 'Pengaduan Masyarakat')">Pengaduan Masyarakat</button>
+          <button onclick="ajukanLayanan(event, 'Permohonan Informasi')">Permohonan Informasi</button>
+        </div>
+      </li>
+    </ul>
+
+    <div class="other-message-box">
+      <h3>Pesan Lainnya</h3>
+      <textarea id="customMessage" placeholder="Tulis pesan atau permohonan lain di sini..."></textarea>
+      <button onclick="ajukanPesanLain()">Ajukan ke Admin via WhatsApp</button>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Desa Manola | Dibuat oleh Kelompok KKN 36 UNKRISWINA SUMBA 2025
+  </footer>
+
+  <script>
+    function toggleSubmenu(id) {
+      const submenu = document.getElementById('submenu-' + id);
+      const allSubmenus = document.querySelectorAll('.submenu');
+      allSubmenus.forEach(sm => {
+        if(sm !== submenu) {
+          sm.style.display = 'none';
+        }
+      });
+      submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function ajukanLayanan(event, layanan) {
+      event.stopPropagation();
+      const nomor = "082237986351"; // Ganti dengan nomor WA admin dengan format internasional
+      const pesan = encodeURIComponent(`Halo Admin Desa Manola, saya ingin mengajukan layanan: ${layanan}. Mohon bantuannya.`);
+      const link = `https://wa.me/${nomor}?text=${pesan}`;
+      window.open(link, '_blank');
+    }
+
+    function ajukanPesanLain() {
+      const nomor = "082237986351"; // Ganti nomor WA admin format internasional
+      const pesanTextarea = document.getElementById('customMessage').value.trim();
+      if(pesanTextarea.length === 0) {
+        alert('Mohon isi pesan terlebih dahulu.');
+        return;
+      }
+      const pesan = encodeURIComponent(`Halo Admin Desa Manola, saya ingin menyampaikan pesan berikut:\n${pesanTextarea}`);
+      const link = `https://wa.me/${nomor}?text=${pesan}`;
+      window.open(link, '_blank');
+    }
+  </script>
+</body>
+</html>

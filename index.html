@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Desa Manola - Beranda</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: url('img/background1.JPG') no-repeat center center fixed;
+      background-size: cover;
+      color: #000; /* agar teks tetap terbaca */
+    }
+
+    header, nav, .hero, .content, footer {
+      background-color: rgba(255, 255, 255, 0.0); /* transparan penuh */
+      backdrop-filter: blur(3px); /* efek blur lembut */
+      -webkit-backdrop-filter: blur(3px); /* dukungan Safari */
+    }
+
+    header {
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      text-align: center;
+    }
+
+    nav a {
+      display: inline-block;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .hero {
+      padding: 40px;
+      text-align: center;
+      color: white;
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      color: white;
+    }
+
+    .content-text {
+      flex: 1 1 60%;
+    }
+
+    .content-img {
+  flex: 1 1 35%;
+  display: flex;
+  align-items: flex-start; /* mulai dari atas */
+  justify-content: center; /* tengah horizontal */
+  margin-top: 80px; /* geser ke bawah */
+}
+
+    .content-img img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Desa Manola</h1>
+    <p>Website Resmi Desa Manola, Kabupaten Sumba Barat</p>
+  </header>
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="visi-misi.html">Visi & Misi</a>
+    <a href="profil.html">Profil</a>
+    <a href="peta.html">Peta</a>
+    <a href="berita.html">Berita</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="potensi.html">Potensi</a>
+    <a href="layanan.html">Layanan</a>
+   
+  </nav>
+
+  <div class="hero">
+    <h1>Selamat Datang di Website Desa Manola</h1>
+  </div>
+
+  <div class="content">
+    <div class="content-text">
+      <h2>Sejarah Singkat Desa Manola</h2><br>
+      <p>Desa Manola merupakan salah satu desa termuda di Kecamatan Loli, Kabupaten Sumba Barat. Desa ini lahir sebagai hasil pemekaran dari Desa Bali Ledo yang resmi dibentuk melalui Peraturan Daerah Kabupaten Sumba Barat Nomor 12 Tahun 2010 tentang Pembentukan Desa Manola.</p>
+      <p>Tujuan utama dari pemekaran ini adalah untuk mendekatkan pelayanan publik kepada masyarakat dan mempercepat pembangunan desa dalam berbagai aspek, seperti pemerintahan, sosial, dan kemasyarakatan.</p>
+      <p>Pada tahun 2010, setelah resmi berdiri, Desa Manola mengadakan pemilihan kepala desa yang pertama. Dua calon bersaing dalam pemilihan tersebut, yaitu Ibu Martina Hori Tena dan Bapak Petrus Dangi Loja. Hasil pemilihan menetapkan Ibu Martina Hori Tena sebagai kepala desa pertama dan beliau menjabat selama dua periode, yaitu:</p>
+      <p>• Periode 2011–2017<br />• Periode 2018–2023</p>
+      <p>Selanjutnya, pada tanggal 29 Desember 2023, Bupati Sumba Barat, Yohanis Dade, SH, melantik Bapak Jape Nisa sebagai Kepala Desa Manola periode 2024–2031. Sejak berdiri, Desa Manola telah berkembang sebagai desa dengan potensi pertanian yang besar dan budaya lokal yang kental. Dengan lahan yang subur dan masyarakat yang aktif dalam pembangunan, desa ini terus berbenah untuk mewujudkan kesejahteraan bagi seluruh warganya.</p>
+    </div>
+    <div class="content-img">
+      <img src="img/tugu.jpeg" alt="Tugu Desa Manola">
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Desa Manola | Dibuat oleh Kelompok KKN 36 UNKRISWINA SUMBA 2025
+  </footer>
+</body>
+</html>

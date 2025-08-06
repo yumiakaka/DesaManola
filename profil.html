@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Struktur Pemerintah Desa - Desa Manola</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    body {
+      background: url('img/background1.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    header, footer, nav {
+      background: transparent;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      padding: 10px 15px;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 25px;
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    h1, h2 {
+      color: white;
+    }
+
+    .bagan {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    .kolom-atas {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .bagan img, .list-lain img, .kadus img {
+      width: 120px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    .bagan div, .list-lain div, .kadus div {
+      text-align: center;
+      max-width: 150px;
+    }
+
+    .bagan p, .list-lain p, .kadus p {
+      font-size: 14px;
+      margin-top: 8px;
+    }
+
+    .list-lain, .kadus {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Struktur Pemerintahan Desa Manola</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="visi-misi.html">Visi & Misi</a>
+    <a href="profil.html">Profil</a>
+    <a href="peta.html">Peta</a>
+    <a href="berita.html">Berita</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="potensi.html">Potensi</a>
+    <a href="layanan.html">Layanan</a>
+    
+  </nav>
+
+  <main>
+    <h2>Struktur Organisasi Pemerintah Desa</h2>
+
+    <div class="bagan">
+      <div class="kolom-atas">
+        <div class="kepala-desa">
+          <img src="img/kepala desa.jpg" alt="Kepala Desa" />
+          <p><strong>Kepala Desa:</strong><br>Jape Nisa</p>
+        </div>
+        <div class="sekretaris">
+          <img src="img/sekdes.jpg" alt="Sekretaris Desa" />
+          <p><strong>Sekretaris Desa:</strong><br>Tito Y. D. Loka</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="list-lain">
+      <div>
+        <img src="img/bendahara.jpg" alt="Bendahara" />
+        <p><strong>Kaur Keuangan (Bendahara):</strong><br>Paulina L. Magi</p>
+      </div>
+      <div>
+        <img src="img/kaur umum.jpg" alt="Kaur Umum" />
+        <p><strong>Kaur Umum</strong><br>Yohana Tanggela</p>
+      </div>
+      <div>
+        <img src="img/kaur perencanan.jpg" alt="Kaur Perencanaan" />
+        <p><strong>Kaur Perencanaan</strong><br>Soleman S. Ngailu</p>
+      </div>
+      <div>
+        <img src="img/kase pemerintahan.jpg" alt="Kase Pemerintahan" />
+        <p><strong>Kase Pemerintahan</strong><br>Fulgensius T.U.K.Dey</p>
+      </div>
+      <div>
+        <img src="img/kase pelayanan.jpg" alt="Kase Pelayanan" />
+        <p><strong>Kase Pelayanan</strong><br>Yulius K. Tenabolo</p>
+      </div>
+      <div>
+        <img src="foto/kase-kesejahteraan.jpg" alt="Kase Kesejahteraan" />
+        <p><strong>Kase Kesejahteraan</strong><br>Daud Lede Mude</p>
+      </div>
+    </div>
+
+    <div class="kadus">
+      <div>
+        <img src="img/kadus1.jpg" alt="Kepala Dusun 1" />
+        <p><strong>Kepala Dusun 1</strong><br>Lele Leba Ari</p>
+      </div>
+      <div>
+        <img src="img/kadus2.jpg" alt="Kepala Dusun 2" />
+        <p><strong>Kepala Dusun 2</strong><br>Oktavianus Bulu</p>
+      </div>
+      <div>
+        <img src="img/kadus3.jpg" alt="Kepala Dusun 3" />
+        <p><strong>Kepala Dusun 3</strong><br>Soleman Woli</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Desa Manola | Dibuat oleh Kelompok KKN 36 UNKRISWINA SUMBA 2025
+  </footer>
+</body>
+</html>

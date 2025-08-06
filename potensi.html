@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Potensi Desa Manola</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: url('img/background1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      min-height: 100vh;
+    }
+    header, footer, nav {
+      background: transparent;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    nav a {
+      color: white;
+      padding: 10px 15px;
+      display: inline-block;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+    main {
+      padding: 30px;
+      max-width: 1000px;
+      margin: 30px auto;
+      background: rgba(255, 255, 255, 0.5); /* transparan */
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    h2 {
+      color: #1e3a8a;
+      margin-bottom: 20px;
+    }
+    .potensi {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .potensi-item {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .potensi-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    .potensi-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .potensi-item p {
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Potensi Desa Manola</h1>
+  </header>
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="visi-misi.html">Visi & Misi</a>
+    <a href="profil.html">Profil</a>
+    <a href="peta.html">Peta</a>
+    <a href="berita.html">Berita</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="potensi.html">Potensi</a>
+    <a href="layanan.html">Layanan</a>
+   
+  </nav>
+
+  <main>
+    <h2>Potensi Unggulan Desa</h2>
+    <div class="potensi">
+      <div class="potensi-item">
+        <img src="img/tenun.jpeg" alt="Kegiatan Menenun Kain" />
+        <p>Menenun</p>
+      </div>
+      <div class="potensi-item">
+        <img src="img/gembala.jpeg" alt="Gembala" />
+        <p>Peternakan</p>
+      </div>
+      <div class="potensi-item">
+        <img src="img/beden.jpg" alt="pertanian" />
+        <p>Pertanian</p>
+      </div>
+      <!-- Tambahkan potensi lainnya jika diperlukan -->
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Desa Manola | Dibuat oleh Kelompok KKN 36 UNKRISWINA SUMBA 2025
+  </footer>
+</body>
+</html>
